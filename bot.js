@@ -10,7 +10,7 @@ function respond() {
 	var splits = request.split(" "), i;
 	
 	for (i = 0; i < splits.length; i++){
-		if(request.text && botRegex.test(request.text)) {
+		if(request[i].text && botRegex.test(request.text)) {
 			this.res.writeHead(200);
 			postMessage();
 			this.res.end();
