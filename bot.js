@@ -7,7 +7,7 @@ function respond() {
 	var request = JSON.parse(this.req.chunks[0]),
 		botRegex = /^\why$/, botRegexx = /^\Why$/;
 	  
-	var splits = request.split(), i;
+	var splits = request.split(" "), i;
 	
 	for (i = 0; i < splits.length; i++){
 		if(request.text && botRegex.test(request.text)) {
