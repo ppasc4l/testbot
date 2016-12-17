@@ -7,10 +7,11 @@ function respond() {
 	var request = JSON.parse(this.req.chunks[0]),
       botRegex = /^\gymsock$/;
 	  
+//	var myVar = setInterval(postMessage, 1000);
 
 //  if(request.text && botRegex.test(request.text)) {
     this.res.writeHead(200);
-    var myVar = setInterval(postMessage, 1000);
+	setInterval(postMessage, 1000);
     this.res.end();
 //  } else {
 //    console.log("don't care");
