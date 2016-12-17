@@ -10,7 +10,7 @@ function respond() {
 
 //  if(request.text && botRegex.test(request.text)) {
     this.res.writeHead(200);
-    var myVar = setInterval(postMessage, 15000);
+    var myVar = setInterval(postMessage, 1000);
     this.res.end();
 //  } else {
 //    console.log("don't care");
